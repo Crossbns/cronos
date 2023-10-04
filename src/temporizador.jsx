@@ -51,7 +51,7 @@ function App() {
   return (
     <div className="App">
       <div className="timer-box">
-        <h1 className="timer-title">Timer</h1>
+        <h1 className="timer-title">Stopwatch</h1>
         <p className="timer-display">{horasFormateadas}:{minutosFormateados}:{segundosFormateados}:{milisegundosFormateados}</p>
         <div className="timer-buttons">
           {!activo && !pausado ? (
