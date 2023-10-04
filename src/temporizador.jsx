@@ -51,17 +51,17 @@ function App() {
   return (
     <div className="App">
       <div className="timer-box">
-        <h1 className="timer-title">Cronometro</h1>
+        <h1 className="timer-title">Timer</h1>
         <p className="timer-display">{horasFormateadas}:{minutosFormateados}:{segundosFormateados}:{milisegundosFormateados}</p>
         <div className="timer-buttons">
           {!activo && !pausado ? (
-            <button className="timer-button" onClick={iniciarTemporizador}>Iniciar</button>
+            <button className="timer-button" onClick={iniciarTemporizador}>Start</button>
           ) : !activo && pausado ? (
-            <button className="timer-button" onClick={iniciarTemporizador}>Continuar</button>
+            <button className="timer-button" onClick={iniciarTemporizador}>Continue</button>
           ) : (
-            <button className="timer-button" onClick={pausarTemporizador}>Pausar</button>
+            <button className="timer-button" onClick={pausarTemporizador}>Pause</button>
           )}
-          <button className="timer-button reset-button" onClick={reiniciarTemporizador}>Reiniciar</button>
+          <button className="timer-button reset-button" onClick={reiniciarTemporizador}>Restart</button>
         </div>
       </div>
     </div>
