@@ -32,7 +32,7 @@ body {
   padding: 1rem; 
   border-radius: .25rem;
   border: none;
-  background-color: #4CAF50; 
+  background-color: #55cfff; 
   color: #000000; 
   font-size: 1rem;
   font-weight: bold; 
@@ -40,7 +40,7 @@ body {
 }
 
 .timer-button:hover {
-  background-color: #8BC34A; 
+  background-color: #8adeff; 
 }
 
 .reset-button {
@@ -48,7 +48,7 @@ body {
 }
 
 .reset-button:hover {
-  background-color: #f47236; 
+  background-color: #ff8484; 
 }
 
 
