@@ -42,17 +42,25 @@ function App() {
   const segundos = Math.floor((milisegundosTotales / 1000) % 60);
   const milisegundos = milisegundosTotales % 1000;
 
-  // Formatear las horas, minutos y segundos para que siempre tengan al menos dos dígitos
-  const horasFormateadas = String(horas).padStart(2, '0');
-  const minutosFormateados = String(minutos).padStart(2, '0');
-  const segundosFormateados = String(segundos).padStart(2, '0');
-  const milisegundosFormateados = String(milisegundos).padStart(3, '0');
+  const horasFormateadas = String(parseInt(horas)).padStart(2, '0');
+  const minutosFormateados = String(parseInt(minutos)).padStart(2, '0');
+  const segundosFormateados = String(parseInt(segundos)).padStart(2, '0');
+  const milisegundosFormateados = String(parseInt(milisegundos)).padStart(3, '0');
+
+
 
   return (
     <div className="App">
       <div className="timer-box">
         <h1 className="timer-title">Stopwatch</h1>
-        <p className="timer-display">{horasFormateadas}:{minutosFormateados}:{segundosFormateados}:{milisegundosFormateados}</p>
+        <div className="timer-display">
+          <p className="time">{horasFormateadas}</p>
+          <p className="time">{minutosFormateados}</p>
+          <p className="time">{segundosFormateados}</p>
+          <p className="time">{milisegundosFormateados}</p>
+        </div>
+
+
         <div className="timer-buttons">
           {!activo && !pausado ? (
             <button className="timer-button" onClick={iniciarTemporizador}>Start</button>
@@ -66,8 +74,6 @@ function App() {
       </div>
     </div>
   )
-  
-  
 }
 
 export default App

@@ -18,26 +18,52 @@ body {
 
 .timer-title {
   color: #ffffff; 
-  font-size: 2.5rem;
+  font-size: 3.5rem;
+  margin-top: 0px;
 }
 
 .timer-display {
-  font-size: 2rem;
+  font-size: 30px;
   color: #ffffff; 
+  gap: 20px;
+  width: 100%;
+  margin-left: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; 
 }
 
+.timer-display p {
+
+  border: 1px solid rgb(60, 223, 133);
+  background-color: rgb(60, 223, 133);
+  border-radius: 6px;
+  padding: 15px;
+  width: 60px;
+  display: inline-block;
+  text-align: center;
+  box-shadow: 4px 4px 8px 2px rgba(0, 0, 0, 0.4); /* Sombreado más visible */
+}
+
+
+
+
+
 .timer-button {
+  width: 120px;
   margin-top: var(--padding);
-  margin-right: .5rem; 
+  margin-right: 10px; 
   padding: 1rem; 
-  border-radius: .25rem;
+  border-radius: 360px;
   border: none;
-  background-color: #55cfff; 
-  color: #000000; 
-  font-size: 1rem;
+  background-color: rgb(85, 187, 255); 
+  color: white; 
+  font-size: 22px;
   font-weight: bold; 
   cursor: pointer;
+  box-shadow: 4px 4px 8px 2px rgba(0, 0, 0, 0.4); /* Sombreado más visible */
 }
+
 
 .timer-button:hover {
   background-color: #8adeff; 
@@ -45,6 +71,7 @@ body {
 
 .reset-button {
   background-color: #F44336; 
+  color: white;
 }
 
 .reset-button:hover {
@@ -59,11 +86,16 @@ body {
   justify-content: center; 
   background-color: #444; 
   padding: 3rem; 
-  border-radius: 8px;
+  border-radius: 12px;
+  width: 500px;
+  box-shadow: 4px 4px 8px 2px rgba(0, 0, 0, 0.2); /* Sombreado más visible */
 }
 
 .timer-buttons {
   display: flex; 
+  justify-content: space-between;
+  gap: 50px;
+  margin-top: 50px;
 }
 
 /* Estilos responsivos */
