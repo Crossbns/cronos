@@ -34,7 +34,6 @@ body {
 }
 
 .timer-display p {
-
   border: 1px solid rgb(60, 223, 133);
   background-color: rgb(60, 223, 133);
   border-radius: 6px;
@@ -43,6 +42,7 @@ body {
   display: inline-block;
   text-align: center;
   box-shadow: 4px 4px 8px 2px rgba(0, 0, 0, 0.4); /* Sombreado más visible */
+  font-weight: bold;
 }
 
 
